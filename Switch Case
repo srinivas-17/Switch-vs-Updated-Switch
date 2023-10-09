@@ -1,0 +1,77 @@
+
+public class OlderSwitch {
+
+	public static void main(String[] args) {
+
+		// for int data type
+		int day = 1;
+
+		switch (day) {
+		case 1:
+			System.out.println("1");
+			break;
+		case 2:
+			System.out.println("2");
+			break;
+		case 3:
+			System.out.println("3");
+			break;
+		case 4:
+			System.out.println("4");
+			break;
+		case 5:
+			System.out.println("5");
+			break;
+		default:
+			System.out.println("Invalid option");
+		}
+
+		char days = 'c';
+
+		switch (days) {
+		case 'a':
+			System.out.println("1");
+			break;
+		case 'b':
+			System.out.println("2");
+			break;
+		case 'c':
+			System.out.println("3");
+			break;
+		case 'd':
+			System.out.println("4");
+			break;
+		case 'e':
+			System.out.println("5");
+			break;
+		default:
+			System.out.println("Invalid option");
+		}
+
+		String dayy = "saturday";
+
+		switch (dayy) {
+		case "Monday":
+			System.out.println("1");
+			break;
+		case "tuesday":
+			System.out.println("2");
+			break;
+		case "wednesday":
+			System.out.println("3");
+			break;
+		case "thursday":
+			System.out.println("4");
+			break;
+		case "friday":
+			System.out.println("5");
+			break;
+		case "saturday", "sunday":
+			System.out.println("6");
+			break;
+		default:
+			System.out.println("Invalid option");
+		}
+	}
+}
+
