@@ -1,0 +1,62 @@
+
+public class UpdatedSwitch {
+
+	public static void main(String[] args) {
+
+		int a = 10, b = 20, result = 0;
+		int choice = 2;
+		
+		//1
+		switch (choice) {
+
+		case 1 -> {
+			System.out.println(a + b);
+			System.out.println("Addition");
+		}
+		case 2 -> System.out.println(a - b);
+		case 3 -> System.out.println(a * b);
+		case 4 -> System.out.println(a / b);
+		default -> System.out.println("Invalid option");
+
+		}
+
+		//2
+		switch (choice) {
+
+		case 1 -> result = a + b;
+		case 2 -> result = a - b;
+		case 3 -> result = a * b;
+		case 4 -> result = a / b;
+		default -> result = 0;
+
+		}
+		System.out.println(result);
+		
+		
+       //3
+		result=switch (choice) {
+
+		case 1 -> a + b;
+		case 2 -> a - b;
+		case 3 ->  a * b;
+		case 4 ->  a / b;
+		default ->  0;
+
+		};
+		
+		System.out.println(result);
+		
+		//4
+		result=switch (choice) {
+
+		case 1 : yield (a + b);
+		case 2 :yield (a - b);
+		case 3 : yield(a * b);
+		case 4 : yield (a / b);
+		default :yield  0;
+
+		};
+		
+		System.out.println(result);
+	}
+}
